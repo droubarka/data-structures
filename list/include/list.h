@@ -25,5 +25,4 @@ void	list_addfront(t_list **head, t_list *node);
 void	list_addback(t_list **head, t_list *node);
 void	list_clear(t_list **head, void (*del)(void *));
 
-
 #endif

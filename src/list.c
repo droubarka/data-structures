@@ -38,3 +38,15 @@ t_list	*list_last(t_list *head)
 	}
 	return (head);
 }
+
+void	list_iter(t_list *head, void (*fn)(void *))
+{
+	if (fn != NULL)
+	{
+		while (head != NULL)
+		{
+			fn(head->content);
+			head = head->next;
+		}
+	}
+}

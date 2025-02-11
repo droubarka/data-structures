@@ -22,5 +22,6 @@ void	list_iter(t_list *head, void (*fn)(void *));
 void	list_delone(t_list *node, void (*del)(void *));
 void	list_addfront(t_list **head, t_list *node);
 void	list_addback(t_list **head, t_list *node);
+void	list_clear(t_list **head, void (*del)(void *));
 
 #endif

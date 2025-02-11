@@ -59,3 +59,30 @@ void	list_delone(t_list *node, void (*del)(void *))
 		free(node);
 	}
 }
+
+void	list_addfront(t_list **head, t_list *node)
+{
+	if (head != NULL && node != NULL)
+	{
+		if (*head != NULL)
+		{
+			node->next = *head;
+		}
+		*head = node;
+	}
+}
+
+void	list_addback(t_list **head, t_list *node)
+{
+	if (head != NULL && node != NULL)
+	{
+		if (*head != NULL)
+		{
+			list_last(*head)->next = node;
+		}
+		else
+		{
+			*head = node;
+		}
+	}
+}

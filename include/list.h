@@ -17,5 +17,6 @@ t_list	*list_new(void *content);
 size_t	list_size(t_list *head);
 t_list	*list_last(t_list *head);
 void	list_iter(t_list *head, void (*fn)(void *));
+void	list_delone(t_list *node, void (*del)(void *));
 
 #endif

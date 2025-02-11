@@ -15,5 +15,6 @@ struct s_list
 
 t_list	*list_new(void *content);
 size_t	list_size(t_list *head);
+t_list	*list_last(t_list *head);
 
 #endif

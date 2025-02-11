@@ -26,3 +26,15 @@ size_t	list_size(t_list *head)
 	}
 	return (size);
 }
+
+t_list	*list_last(t_list *head)
+{
+	if (head != NULL)
+	{
+		while (head->next != NULL)
+		{
+			head = head->next;
+		}
+	}
+	return (head);
+}

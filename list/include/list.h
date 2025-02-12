@@ -19,6 +19,7 @@ t_list	*list_new(void *content);
 t_list	*list_last(t_list *head);
 t_list	*list_map(t_list *head, void *(*fn)(void *), void (*del)(void *));
 t_list	*list_find(t_list *head, void *value, int (*cmp)(void *, void *));
+t_list	*list_duplicate(t_list *head, void *(*dup)(void *), void (*del)(void *));
 
 void	list_iter(t_list *head, void (*fn)(void *));
 void	list_delone(t_list *node, void (*del)(void *));

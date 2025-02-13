@@ -1,11 +1,11 @@
 
 #include "list.h"
 
-void	list_addafter(t_list *node, t_list *head)
+void	list_addafter(t_list *node, t_list *new_node)
 {
-	if (node != NULL && head != NULL)
+	if (node != NULL && new_node != NULL)
 	{
-		list_last(head)->next = node->next;
-		node->next = head;
+		list_last(new_node)->next = node->next;
+		node->next = new_node;
 	}
 }

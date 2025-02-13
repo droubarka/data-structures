@@ -9,6 +9,10 @@ void	list_addfront(t_list **head, t_list *node)
 		{
 			node->next = *head;
 		}
+		else
+		{
+			node->next = NULL;
+		}
 		*head = node;
 	}
 }

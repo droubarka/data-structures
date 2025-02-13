@@ -30,7 +30,7 @@ void	list_addafter(t_list *node, t_list *new_node);
 void	list_removelast(t_list **head, void (*del)(void *));
 void	list_removefirst(t_list **head, void (*del)(void *));
 void	list_reverse(t_list **head);
-void	list_retateleft(t_list **head);
-void	list_retateright(t_list **head);
+void	list_rotateleft(t_list **head);
+void	list_rotateright(t_list **head);
 
 #endif

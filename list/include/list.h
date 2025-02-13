@@ -31,5 +31,6 @@ void	list_removelast(t_list **head, void (*del)(void *));
 void	list_removefirst(t_list **head, void (*del)(void *));
 void	list_reverse(t_list **head);
 void	list_retateleft(t_list **head);
+void	list_retateright(t_list **head);
 
 #endif

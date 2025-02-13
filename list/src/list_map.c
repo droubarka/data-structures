@@ -29,7 +29,7 @@ t_list	*list_map(t_list *head, void *(*fn)(void *), void (*del)(void *))
 		}
 		if (new_list != NULL)
 		{
-			list_addafter(last_node, new_node);
+			list_insertafter(last_node, new_node);
 		}
 		else
 		{

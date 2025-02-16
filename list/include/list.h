@@ -32,5 +32,6 @@ t_list	*list_find(t_list *head, void *value, int (*cmp)(void *, void *));
 t_list	*list_last(t_list *head);
 t_list	*list_map(t_list *head, void *(*fn)(void *), void (*del)(void *));
 t_list	*list_new(void *content);
+t_list	*list_nth(t_list *head, size_t index);
 
 #endif

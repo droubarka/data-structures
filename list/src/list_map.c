@@ -8,11 +8,8 @@ t_list	*list_map(t_list *head, void *(*fn)(void *), void (*del)(void *))
 	t_list	*last_node;
 	void	*content;
 
-	if (fn == NULL || del == NULL)
-		return (NULL);
-
 	new_list = NULL;
-	while (head)
+	while (head != NULL)
 	{
 		content = fn(head->content);
 		if (content == NULL)
@@ -29,7 +26,7 @@ t_list	*list_map(t_list *head, void *(*fn)(void *), void (*del)(void *))
 		}
 		if (new_list != NULL)
 		{
-			list_insertafter(last_node, new_node);
+			last_node->next = new_node;
 		}
 		else
 		{

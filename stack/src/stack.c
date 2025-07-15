@@ -43,3 +43,16 @@ t_stack	*stack_push(t_stack **stack, t_stack *node)
 	*stack = node;
 	return (node);
 }
+
+void	stack_clear(t_stack **stack, void (*del)(void *))
+{
+	t_stack	*node;
+
+	while (*stack != NULL)
+	{
+		node = *stack;
+		*stack = node->next;
+		del(node->data);
+		free(node);
+	}
+}

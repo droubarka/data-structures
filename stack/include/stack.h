@@ -16,6 +16,6 @@ t_stack	*stack_new(void *data);
 t_stack	*stack_pop(t_stack **stack);
 t_stack	*stack_push(t_stack **stack, t_stack *node);
 
-void	stack_clear(t_stack **stack, void (*del)(void *))
+void	stack_clear(t_stack **stack, void (*del)(void *));
 
 #endif
